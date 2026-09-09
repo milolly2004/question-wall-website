@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Wall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">💬 Question Wall</div>
+        <div class="subtitle">Ask • Share • Learn Together</div>
+    </header>
+
+    <main>
+
+        <!-- Ask Question -->
+        <section class="question-form">
+            <h1>🙋 Ask a Question</h1>
+            <p>มีข้อสงสัยระหว่างทำแบบฝึกหัด? ถามได้เลย!</p>
+
+            <input 
+                type="text" 
+                id="studentName" 
+                placeholder="ชื่อของคุณ"
+            >
+
+            <textarea 
+                id="questionInput" 
+                placeholder="พิมพ์คำถามของคุณที่นี่..."
+            ></textarea>
+
+            <button onclick="addQuestion()">
+                ➕ Post Question
+            </button>
+        </section>
+
+
+        <!-- Question Wall -->
+        <section class="wall">
+
+            <div class="wall-header">
+                <h2>📌 Question Wall</h2>
+
+                <span id="questionCount">
+                    0 Questions
+                </span>
+            </div>
+
+            <div id="questionList">
+
+                <div class="empty">
+                    🎉 ยังไม่มีคำถาม
+                    <br>
+                    เมื่อมีข้อสงสัย ลองถามคำถามแรกเลย!
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Question Wall Website © 2026
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
